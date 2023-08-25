@@ -1,4 +1,4 @@
-NODE CRUD API DOCUMENTATION
+# NODE CRUD API DOCUMENTATION
 
 Create User endpoint: /signup
 
@@ -17,4 +17,4 @@ Update User endpoint: /update/ID
 
 Soft Delete User based on either username or email endpoint: /soft-delete/query
 
-Note: For Validation, I am using here joi validation
+# Note: For Validation, I am using here joi validation
