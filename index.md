@@ -1,19 +1,20 @@
-# user routes:
+NODE CRUD API DOCUMENTATION
 
-//create user: signup:
-router.post("/signup", validate(validation.createKeys), UserController.userRegistration,);
+Create User endpoint: /signup
 
-//login:
-router.post("/login", validate(validation.loginKeys), UserController.userLogin);
 
-//all users list:
-router.get("/list", authenticate, UserController.usersList);
+Login  endpoint: /login
 
-// read user either username or email:
-router.get("/get/:query", authenticate, UserController.singleUser);
 
-//update user Data:
-router.put("/update/:id", authenticate, checkRouter, UserController.updateUser);
+All Users List  endpoint /list
 
-//delete user:
-router.put("/soft-delete/:query", authenticate, checkRouter, UserController.deleteUser);
+
+User data based on either username or email endpoint: /user/query
+
+
+Update User endpoint: /update/ID
+
+
+Soft Delete User based on either username or email endpoint: /soft-delete/query
+
+Note: For Validation, I am using here joi validation
